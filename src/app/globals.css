@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #f8fafc;
+  --color-foreground: #1e293b;
+  --color-primary: #2563eb;
+  --color-primary-foreground: #ffffff;
+  --color-muted-foreground: #475569;
+  --color-muted: #e9eff8;
+  --color-ring: #2563eb;
+  --color-party-blue: #3b82f6;
+  --color-party-pink: #ed6ea0;
+  --color-party-yellow: #f9c74f;
+  --color-party-green: #63bf9c;
+  --color-party-purple: #a78bfa;
+  --radius-control: 14px;
+  --animate-confetti: confetti var(--duration) ease-out var(--delay) both;
+  --animate-enter: enter 250ms ease-out both;
+}
+
+@theme inline {
+  --font-sans: var(--font-body);
+  --font-heading: var(--font-body);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: #101827;
+    --color-foreground: #f1f5f9;
+    --color-primary: #93c5fd;
+    --color-primary-foreground: #10233d;
+    --color-muted-foreground: #cbd5e1;
+    --color-muted: #1c2c45;
+    --color-ring: #93c5fd;
+  }
+}
+
+@keyframes confetti {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+    opacity: 0;
+  }
+  12% {
+    opacity: 1;
+  }
+  35% {
+    transform: translate(calc(var(--drift) * 0.5), var(--rise))
+      rotate(calc(var(--spin) * 0.4));
+    opacity: 1;
+  }
+  100% {
+    transform: translate(var(--drift), 65vh) rotate(var(--spin));
+    opacity: 0;
+  }
+}
+
+@keyframes enter {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
