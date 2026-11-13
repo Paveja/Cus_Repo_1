@@ -1,6 +1,14 @@
 {
-  "installCommand": "npm ci",
-  "buildCommand": "npm run build",
-  "startCommand": "npm run start",
-  "port": 4173
+  "version": 2,
+  "start": "npm run dev -- --hostname 0.0.0.0 --port 4173",
+  "port": 4173,
+  "type": "node",
+  "install": [
+    {
+      "name": "Node dependencies",
+      "check": "npm ls --depth=0",
+      "run": "npm ci"
+    }
+  ],
+  "services": []
 }
