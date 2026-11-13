@@ -1,0 +1,27 @@
+
+> maison-aure-static@1.0.0 dev
+> next dev --hostname 0.0.0.0 --port 4173
+
+▲ Next.js 16.4.6 (Turbopack)
+- Local:         http://localhost:4173
+- Network:       http://0.0.0.0:4173
+✓ Ready in 269ms
+✓ Running next.config.ts took 41ms
+Attention: Next.js now collects completely anonymous telemetry regarding usage.
+This information is used to shape Next.js' roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+https://nextjs.org/telemetry
+
+
+ GET / 200 in 306ms (next.js: 134ms, application-code: 172ms)
+⚠ Blocked cross-origin request to Next.js dev resource /_next/hmr from "4173-ilnqrkgrusn73tmxhiut5.sandbox-v2.revolte.io".
+Cross-origin access to Next.js dev resources is blocked by default for safety.
+
+To allow this host in development, add it to "allowedDevOrigins" in next.config.js and restart the dev server:
+
+// next.config.js
+module.exports = {
+  allowedDevOrigins: ['4173-ilnqrkgrusn73tmxhiut5.sandbox-v2.revolte.io'],
+}
+
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
