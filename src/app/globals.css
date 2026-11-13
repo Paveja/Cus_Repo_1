@@ -43,20 +43,44 @@
 }
 
 @layer base {
-  html { scroll-behavior: smooth; scroll-padding-top: 32px; }
-  body { background: var(--color-background); color: var(--color-foreground); }
-  :focus-visible { outline: 2px solid var(--color-ring); outline-offset: 6px; }
-  ::selection { background: var(--color-secondary); color: var(--color-foreground); }
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 32px;
+  }
+  body {
+    background: var(--color-background);
+    color: var(--color-foreground);
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-ring);
+    outline-offset: 6px;
+  }
+  ::selection {
+    background: var(--color-secondary);
+    color: var(--color-foreground);
+  }
 }
 
 @keyframes arrive {
-  from { opacity: 0; transform: translateY(12px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-@utility enter { animation: arrive 250ms ease-out both; }
+@utility enter {
+  animation: arrive 250ms ease-out both;
+}
 
 @media (prefers-reduced-motion: reduce) {
-  html { scroll-behavior: auto; }
-  .enter { animation: none; }
+  html {
+    scroll-behavior: auto;
+  }
+  .enter {
+    animation: none;
+  }
 }
