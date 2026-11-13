@@ -1,0 +1,11 @@
+node_modules/
+.next/
+out/
+.env*
+*.tsbuildinfo
+*.log
+core
+core.*
+*.heapsnapshot
+report.*.json
+isolate-*.log
