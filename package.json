@@ -1,0 +1,29 @@
+{
+  "name": "apple-showcase",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --hostname 0.0.0.0",
+    "build": "next build",
+    "start": "next start --hostname 0.0.0.0",
+    "type-check": "next typegen && tsc --noEmit",
+    "lint": "eslint .",
+    "format": "prettier --write src next.config.ts tsconfig.json package.json eslint.config.mjs"
+  },
+  "dependencies": {
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^22",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "latest",
+    "prettier": "^3",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
