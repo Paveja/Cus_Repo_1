@@ -1,0 +1,98 @@
+@import "tailwindcss";
+@theme {
+  --color-background: #faf7f2;
+  --color-foreground: #352b46;
+  --color-primary: #72568c;
+  --color-primary-foreground: #ffffff;
+  --color-muted: #eee8f3;
+  --color-muted-foreground: #70677a;
+  --color-card: #fffcf8;
+  --color-border: #ded5e5;
+  --color-ring: #72568c;
+  --color-lavender: #ded5ef;
+  --color-peach: #f2ded2;
+  --color-sage: #e1e7db;
+  --radius-control: 999px;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --color-background: #201b29;
+    --color-foreground: #f3edf7;
+    --color-primary: #cfb3e8;
+    --color-primary-foreground: #281b34;
+    --color-muted: #332b40;
+    --color-muted-foreground: #c2b8ce;
+    --color-card: #2a2333;
+    --color-border: #554760;
+    --color-ring: #dbc3f0;
+    --color-lavender: #3e3052;
+    --color-peach: #493438;
+    --color-sage: #303e34;
+  }
+}
+@utility hero-atmosphere {
+  background-image:
+    radial-gradient(ellipse at 75% 45%, var(--color-lavender), transparent 55%),
+    radial-gradient(ellipse at 15% 90%, var(--color-peach), transparent 55%);
+}
+@theme inline {
+  --font-heading: var(--font-display);
+  --font-sans: var(--font-body);
+}
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 32px;
+  }
+  body {
+    background: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-body), sans-serif;
+  }
+  a:focus-visible,
+  button:focus-visible,
+  summary:focus-visible {
+    outline: 2px solid var(--color-ring);
+    outline-offset: 6px;
+  }
+  ::selection {
+    background: var(--color-lavender);
+  }
+}
+@keyframes arrive {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes drift {
+  0%,
+  100% {
+    transform: translateY(0) rotate(-8deg);
+  }
+  50% {
+    transform: translateY(-12px) rotate(-6deg);
+  }
+}
+@utility enter {
+  animation: arrive 250ms ease-out both;
+}
+@utility float-book {
+  animation: drift 8s ease-in-out infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
