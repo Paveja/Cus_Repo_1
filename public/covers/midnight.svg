@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600">
+  <defs>
+    <linearGradient id="sky" x2="1" y2="1">
+      <stop stop-color="#243e53" />
+      <stop offset=".55" stop-color="#162c40" />
+      <stop offset="1" stop-color="#0c1e32" />
+    </linearGradient>
+    <radialGradient id="moon">
+      <stop stop-color="#fff8dd" />
+      <stop offset="1" stop-color="#d8dcca" />
+    </radialGradient>
+    <pattern id="stars" width="61" height="73" patternUnits="userSpaceOnUse">
+      <circle cx="13" cy="23" r="1" fill="#c5dac9" />
+      <circle cx="48" cy="58" r=".6" fill="#e4dcc4" />
+    </pattern>
+  </defs>
+  <path fill="url(#sky)" d="M0 0h400v600H0z" />
+  <path fill="url(#stars)" d="M0 0h400v600H0z" />
+  <path d="M18 0v600" stroke="#9aa99b" opacity=".3" />
+  <rect
+    x="33"
+    y="25"
+    width="338"
+    height="549"
+    rx="155"
+    fill="none"
+    stroke="#adbcaa"
+    opacity=".35"
+  />
+  <text
+    x="200"
+    y="84"
+    text-anchor="middle"
+    fill="#d9dfcf"
+    font-size="15"
+    font-family="Georgia"
+    letter-spacing="5"
+  >
+    THE SUNDAY TIMES BESTSELLER
+  </text>
+  <text
+    x="200"
+    y="160"
+    text-anchor="middle"
+    fill="#e7e9d6"
+    font-size="48"
+    font-family="Georgia"
+  >
+    THE
+  </text>
+  <text
+    x="200"
+    y="218"
+    text-anchor="middle"
+    fill="#e7e9d6"
+    font-size="49"
+    font-family="Georgia"
+  >
+    MIDNIGHT
+  </text>
+  <text
+    x="200"
+    y="276"
+    text-anchor="middle"
+    fill="#e7e9d6"
+    font-size="49"
+    font-family="Georgia"
+  >
+    LIBRARY
+  </text>
+  <circle cx="201" cy="376" r="45" fill="url(#moon)" />
+  <path
+    d="M0 481l54-39 44 30 49-41 57 38 51-31 71 26 74-49v185H0z"
+    fill="#102a36"
+  />
+  <g fill="none" stroke="#92a999" stroke-width="2">
+    <path
+      d="M44 565V349m0 95l-20-24m20 1l30-43m-30 6l-17-25M344 564V340m0 98l-26-40m26 6l24-41m-24 4l-14-28"
+    />
+  </g>
+  <path d="M127 480h145v25H127zm13 25h8v51h-8zm111 0h8v51h-8z" fill="#b2beaa" />
+  <text
+    x="200"
+    y="550"
+    text-anchor="middle"
+    fill="#e7e9d6"
+    font-size="32"
+    font-family="Georgia"
+    letter-spacing="5"
+  >
+    MATT HAIG
+  </text>
+  <text
+    x="200"
+    y="579"
+    text-anchor="middle"
+    fill="#c1ccbc"
+    font-size="11"
+    font-family="Georgia"
+    letter-spacing="2"
+  >
+    BETWEEN LIFE AND DEATH THERE IS A LIBRARY.
+  </text>
+</svg>
