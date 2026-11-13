@@ -1,0 +1,4 @@
+{
+  "start": "npm run dev -- --port 4173",
+  "port": 4173
+}

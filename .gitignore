@@ -1,0 +1,15 @@
+node_modules/
+.next/
+out/
+.env*
+!.env.example
+*.log
+test-results/
+playwright-report/
+core
+core.*
+*.heapsnapshot
+report.*.json
+isolate-*.log
+next-env.d.ts
+*.tsbuildinfo
