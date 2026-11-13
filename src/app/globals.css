@@ -4,6 +4,22 @@
   --color-background: #f8fafc;
   --color-foreground: #1e293b;
   --color-primary: #2563eb;
+  --color-greeting-violet: #7c3aed;
+  --color-greeting-rose: #be185d;
+  --color-greeting-teal: #0f766e;
+  --animate-greeting-pop: greeting-pop 250ms ease-out;
+
+  @keyframes greeting-pop {
+    0% {
+      transform: translateY(0) scale(1);
+    }
+    45% {
+      transform: translateY(-8px) scale(1.05);
+    }
+    100% {
+      transform: translateY(0) scale(1);
+    }
+  }
   --color-card: #ffffff;
   --color-border: #e2e8f0;
   --color-ring: #2563eb;
@@ -25,6 +41,9 @@
     --color-background: #0f172a;
     --color-foreground: #f8fafc;
     --color-primary: #60a5fa;
+    --color-greeting-violet: #c4b5fd;
+    --color-greeting-rose: #f9a8d4;
+    --color-greeting-teal: #5eead4;
     --color-card: #1e293b;
     --color-border: #475569;
     --color-ring: #60a5fa;

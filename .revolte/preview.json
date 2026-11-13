@@ -1,6 +1,14 @@
 {
-  "installCommand": "npm ci",
-  "buildCommand": "npm run build",
-  "startCommand": "npm run start",
-  "port": 4173
+  "version": 2,
+  "type": "node",
+  "start": "npm run dev",
+  "port": 4173,
+  "install": [
+    {
+      "name": "Node dependencies",
+      "check": "test -d node_modules/next && test -d node_modules/react",
+      "run": "npm ci"
+    }
+  ],
+  "services": []
 }
