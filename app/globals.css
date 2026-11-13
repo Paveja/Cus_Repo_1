@@ -1,0 +1,58 @@
+@import "tailwindcss";
+@theme {
+  --color-background: #fafaf9;
+  --color-foreground: #0c0a09;
+  --color-card: #ffffff;
+  --color-primary: #1c1917;
+  --color-primary-foreground: #ffffff;
+  --color-muted: #e8ecf0;
+  --color-muted-foreground: #475569;
+  --color-border: #d6d3d1;
+  --color-accent: #a16207;
+  --color-ring: #a16207;
+}
+@theme inline {
+  --font-heading: var(--font-display);
+  --font-sans: var(--font-body);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: #1c1917;
+    --color-foreground: #fafaf9;
+    --color-card: #292524;
+    --color-primary: #fafaf9;
+    --color-primary-foreground: #1c1917;
+    --color-muted: #292524;
+    --color-muted-foreground: #d6d3d1;
+    --color-border: #57534e;
+    --color-ring: #fbbf24;
+  }
+}
+@keyframes enter {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .entrance {
+    animation: enter 250ms ease-out both;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+}
+@layer base {
+  :focus-visible {
+    outline: 2px solid var(--color-ring);
+    outline-offset: 4px;
+  }
+  ::selection {
+    background: var(--color-primary);
+    color: var(--color-primary-foreground);
+  }
+}
