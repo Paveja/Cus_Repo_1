@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #fafaf9;
+  --color-foreground: #272c27;
+  --color-card: #ffffff;
+  --color-primary: #303d32;
+  --color-primary-foreground: #ffffff;
+  --color-secondary: #e9ece5;
+  --color-muted: #f0f0eb;
+  --color-muted-foreground: #5d645d;
+  --color-accent: #916c45;
+  --color-border: #dedfd7;
+  --color-ring: #58724e;
+  --color-scene: #e2e5d9;
+  --color-paper: #f8f3e8;
+  --color-sage: #9caa8f;
+  --color-clay: #c7977b;
+  --color-ink: #293a37;
+  --radius-control: 4px;
+  --radius-container: 4px;
+}
+
+@theme inline {
+  --font-heading: var(--font-display);
+  --font-sans: var(--font-body);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: #1e241f;
+    --color-foreground: #f3f2eb;
+    --color-card: #283029;
+    --color-primary: #dbe3d3;
+    --color-primary-foreground: #243025;
+    --color-secondary: #303a30;
+    --color-muted: #283029;
+    --color-muted-foreground: #bdc5b9;
+    --color-accent: #d6b38b;
+    --color-border: #465044;
+    --color-ring: #c7d5b9;
+  }
+}
+
+@layer base {
+  html { scroll-behavior: smooth; scroll-padding-top: 32px; }
+  body { background: var(--color-background); color: var(--color-foreground); }
+  :focus-visible { outline: 2px solid var(--color-ring); outline-offset: 6px; }
+  ::selection { background: var(--color-secondary); color: var(--color-foreground); }
+}
+
+@keyframes arrive {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@utility enter { animation: arrive 250ms ease-out both; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .enter { animation: none; }
+}
