@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="560" viewBox="0 0 640 560" fill="none">
+  <defs>
+    <linearGradient id="sky" x1="320" y1="24" x2="320" y2="500" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#a6a4c9"/><stop offset=".6" stop-color="#ded3e6"/><stop offset="1" stop-color="#f1ddd9"/>
+    </linearGradient>
+    <radialGradient id="moonlight"><stop stop-color="#fff8df" stop-opacity=".9"/><stop offset="1" stop-color="#fff8df" stop-opacity="0"/></radialGradient>
+    <linearGradient id="water" x1="320" y1="350" x2="320" y2="530" gradientUnits="userSpaceOnUse"><stop stop-color="#bac5d6"/><stop offset="1" stop-color="#e9e1e8"/></linearGradient>
+    <clipPath id="arch"><path d="M94 488V244a226 226 0 0 1 452 0v244Z"/></clipPath>
+  </defs>
+  <path d="M81 491V244a239 239 0 0 1 478 0v247" stroke="#b7a6c4" stroke-opacity=".45"/>
+  <g clip-path="url(#arch)">
+    <path fill="url(#sky)" d="M80 0h480v510H80z"/>
+    <circle cx="340" cy="132" r="120" fill="url(#moonlight)"/>
+    <circle cx="340" cy="132" r="45" fill="#fff5dc"/>
+    <path d="M94 337 181 250 266 335 392 258 546 355v140H94Z" fill="#999bb6"/>
+    <path d="m94 372 115-67 101 63 102-49 134 82v100H94Z" fill="#b1b4c6"/>
+    <path d="M94 403c140-47 250-5 452-25v129H94Z" fill="url(#water)"/>
+    <path d="M246 420h124m-161 15h213m-173 16h90m-107 18h166m-95 18h81" stroke="#f7eee4" stroke-width="3" stroke-linecap="round" opacity=".7"/>
+    <g fill="#686f8c"><path d="m100 216-45 132h27l-42 67h54v85h12v-85h54l-42-67h27z"/><path d="m530 231-39 120h24l-38 68h48v81h12v-81h48l-38-68h24z"/><path d="m148 302-28 78h16l-24 47h31v72h9v-72h31l-24-47h17z"/></g>
+    <g fill="#fff5df"><circle cx="180" cy="118" r="2"/><circle cx="236" cy="67" r="2"/><circle cx="451" cy="162" r="2"/><circle cx="278" cy="192" r="2"/><circle cx="462" cy="244" r="2"/><path d="m202 191 2 7 7 2-7 2-2 7-2-7-7-2 7-2zm226-107 2 7 7 2-7 2-2 7-2-7-7-2 7-2z"/></g>
+  </g>
+  <g stroke="#9c9aaf" stroke-width="1.5" stroke-linecap="round">
+    <path d="M69 491c14-57 4-105-26-151m23 100c-28-2-43-21-42-39 23 1 36 17 42 39Zm2-33c-3-24 7-44 24-50 8 22-2 41-24 50Zm-15-33c-23-3-34-17-33-34 19 3 30 16 33 34Zm506 117c-14-57-4-105 26-151m-23 100c28-2 43-21 42-39-23 1-36 17-42 39Zm-2-33c3-24-7-44-24-50-8 22 2 41 24 50Zm15-33c23-3 34-17 33-34-19 3-30 16-33 34Z"/>
+    <path d="m48 216 3 9 9 3-9 3-3 9-3-9-9-3 9-3Zm537-61 3 9 9 3-9 3-3 9-3-9-9-3 9-3Z"/>
+  </g>
+  <ellipse cx="320" cy="505" rx="240" ry="12" fill="#c8b8ce" opacity=".2"/>
+</svg>

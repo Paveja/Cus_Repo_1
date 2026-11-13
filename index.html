@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Discover your next favorite book through dreamy collections, bestsellers, and thoughtful staff picks." />
+    <meta name="theme-color" content="#faf7f2" />
+    <title>Book Discovery — Find your next chapter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="tokens.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header wrap">
+      <a class="site-name" href="#main">Book discovery<span aria-hidden="true"> ✧</span></a>
+      <nav aria-label="Main navigation">
+        <a href="#collections">Collections</a>
+        <a href="#bestsellers">Bestsellers</a>
+        <a href="#staff-picks">Staff Picks</a>
+      </nav>
+      <a class="header-link" href="#categories">Find your next read <span aria-hidden="true">↗</span></a>
+    </header>
+    <main id="main">
+      <section class="hero wrap" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">A little wonder. A world of stories.</p>
+          <h1 id="hero-title">Find a book.<br />Lose yourself.<br /><em>Discover a little magic.</em></h1>
+          <p>For the midnight page-turners, the daydreamers, and everyone who believes the right book finds you.</p>
+          <a class="button" href="#collections">Explore the collections <span aria-hidden="true">↗</span></a>
+          <p class="hero-note"><span aria-hidden="true">✧</span> Thoughtfully chosen. Endlessly enchanting.</p>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <img class="moon-scene" src="moon-garden.svg" alt="" width="640" height="560" />
+          <img class="hero-book hero-book-left" src="https://covers.openlibrary.org/b/isbn/9780385543910-L.jpg" alt="" width="180" height="270" />
+          <img class="hero-book hero-book-right" src="https://covers.openlibrary.org/b/isbn/9780385534635-L.jpg" alt="" width="180" height="270" />
+          <span class="art-caption">Between the pages, anything is possible.</span>
+        </div>
+      </section>
+      <nav id="categories" class="genre-bar wrap" aria-label="Browse by genre">
+        <span>Follow your curiosity</span>
+        <a href="#fantasy">Fantasy <span aria-hidden="true">✧</span></a>
+        <a href="#romance">Romance <span aria-hidden="true">♡</span></a>
+        <a href="#mystery">Mystery <span aria-hidden="true">☾</span></a>
+        <a href="#fiction">Fiction <span aria-hidden="true">⌁</span></a>
+        <a href="#poetry">Poetry <span aria-hidden="true">❋</span></a>
+      </nav>
+      <section id="collections" class="section wrap" aria-labelledby="collections-title">
+        <div class="section-heading"><div><p class="eyebrow">Picked with a little imagination</p><h2 id="collections-title">A collection for every kind of escape</h2></div><span class="heading-flourish" aria-hidden="true">✧</span></div>
+        <div class="collection-grid">
+          <article class="collection midnight">
+            <img src="https://images.unsplash.com/photo-1475274047050-1d0c0975c63e?auto=format&fit=crop&w=800&q=85" alt="A star-filled night sky above a quiet mountain forest" width="800" height="480" loading="lazy" />
+            <div class="collection-copy"><h3>Midnight Reads</h3><p>Just one more chapter, long after the world falls asleep.</p><details><summary>Open the collection <span aria-hidden="true">↗</span></summary><ul><li><a href="#mystery">The Thursday Murder Club</a></li><li><a href="#night-circus">The Night Circus</a></li><li><a href="#midnight-library">The Midnight Library</a></li></ul></details></div>
+          </article>
+          <article class="collection dreamy">
+            <img src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=800&q=85" alt="Golden sunlight drifting through a misty, dreamlike meadow" width="800" height="480" loading="lazy" />
+            <div class="collection-copy"><h3>Dreamy Escapes</h3><p>Faraway places, impossible worlds, and a little everyday magic.</p><details><summary>Open the collection <span aria-hidden="true">↗</span></summary><ul><li><a href="#fantasy">The House in the Cerulean Sea</a></li><li><a href="#starless-sea">The Starless Sea</a></li><li><a href="#invisible-life">The Invisible Life of Addie LaRue</a></li></ul></details></div>
+          </article>
+          <article class="collection lost">
+            <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=800&q=85" alt="A winding path through a lush, sunlit forest" width="800" height="480" loading="lazy" />
+            <div class="collection-copy"><h3>Stories to Get Lost In</h3><p>Unforgettable lives. Beautiful words. Somewhere to stay awhile.</p><details><summary>Open the collection <span aria-hidden="true">↗</span></summary><ul><li><a href="#fiction">The Seven Husbands of Evelyn Hugo</a></li><li><a href="#romance">Pride and Prejudice</a></li><li><a href="#poetry">Devotions</a></li></ul></details></div>
+          </article>
+        </div>
+      </section>
+      <section id="bestsellers" class="section wrap" aria-labelledby="bestsellers-title">
+        <div class="section-heading"><div><p class="eyebrow">Beloved for a reason</p><h2 id="bestsellers-title">Bestsellers</h2><p>Stories readers keep falling in love with.</p></div><a class="text-link" href="#staff-picks">Meet our staff picks <span aria-hidden="true">→</span></a></div>
+        <div class="book-grid">
+          <article id="midnight-library" class="book-card"><div class="book-cover lavender"><img src="https://covers.openlibrary.org/b/isbn/9780525559474-L.jpg" alt="The Midnight Library book cover" width="240" height="360" loading="lazy" /></div><p class="book-genre">Fiction · A second chance</p><h3>The Midnight Library</h3><p class="author">Matt Haig</p><p class="price">$18.00 <span>USD</span></p></article>
+          <article id="fantasy" class="book-card"><div class="book-cover blue"><img src="https://covers.openlibrary.org/b/isbn/9781250217318-L.jpg" alt="The House in the Cerulean Sea book cover" width="240" height="360" loading="lazy" /></div><p class="book-genre">Fantasy · Found family</p><h3>The House in the Cerulean Sea</h3><p class="author">TJ Klune</p><p class="price">$19.99 <span>USD</span></p></article>
+          <article id="invisible-life" class="book-card"><div class="book-cover blush"><img src="https://covers.openlibrary.org/b/isbn/9780765387561-L.jpg" alt="The Invisible Life of Addie LaRue book cover" width="240" height="360" loading="lazy" /></div><p class="book-genre">Fantasy · Timeless wonder</p><h3>The Invisible Life of Addie LaRue</h3><p class="author">V. E. Schwab</p><p class="price">$19.99 <span>USD</span></p></article>
+          <article id="fiction" class="book-card"><div class="book-cover sage"><img src="https://covers.openlibrary.org/b/isbn/9781501161933-L.jpg" alt="The Seven Husbands of Evelyn Hugo book cover" width="240" height="360" loading="lazy" /></div><p class="book-genre">Fiction · A life untold</p><h3>The Seven Husbands of Evelyn Hugo</h3><p class="author">Taylor Jenkins Reid</p><p class="price">$17.00 <span>USD</span></p></article>
+          <article id="mystery" class="book-card"><div class="book-cover cream"><img src="https://covers.openlibrary.org/b/isbn/9781984880987-L.jpg" alt="The Thursday Murder Club book cover" width="240" height="360" loading="lazy" /></div><p class="book-genre">Mystery · Clever company</p><h3>The Thursday Murder Club</h3><p class="author">Richard Osman</p><p class="price">$18.00 <span>USD</span></p></article>
+        </div>
+      </section>
+      <div class="staff-band">
+        <section id="staff-picks" class="section wrap" aria-labelledby="staff-title">
+          <div class="section-heading"><div><p class="eyebrow">From our shelves to yours</p><h2 id="staff-title">Staff Picks</h2><p>The books we wish we could read for the first time again.</p></div><span class="staff-seal" aria-hidden="true">Chosen<br /><em>with love</em> ♡</span></div>
+          <div class="book-grid staff-grid">
+            <article id="night-circus" class="book-card"><div class="book-cover blush"><img src="https://covers.openlibrary.org/b/isbn/9780385534635-L.jpg" alt="The Night Circus book cover" width="240" height="360" loading="lazy" /></div><p class="book-genre">Fantasy · Spellbinding</p><h3>The Night Circus</h3><p class="author">Erin Morgenstern</p><p class="price">$17.00 <span>USD</span></p><p class="staff-note">“Like stepping into a dream you never want to leave.”</p></article>
+            <article id="starless-sea" class="book-card"><div class="book-cover blue"><img src="https://covers.openlibrary.org/b/isbn/9780385543910-L.jpg" alt="The Starless Sea book cover" width="240" height="360" loading="lazy" /></div><p class="book-genre">Fantasy · Hidden worlds</p><h3>The Starless Sea</h3><p class="author">Erin Morgenstern</p><p class="price">$18.00 <span>USD</span></p><p class="staff-note">“A love letter to stories, secret doors, and getting wonderfully lost.”</p></article>
+            <article id="romance" class="book-card"><div class="book-cover lavender"><img src="https://covers.openlibrary.org/b/isbn/9780141439518-L.jpg" alt="Pride and Prejudice book cover" width="240" height="360" loading="lazy" /></div><p class="book-genre">Romance · A timeless favorite</p><h3>Pride and Prejudice</h3><p class="author">Jane Austen</p><p class="price">$12.00 <span>USD</span></p><p class="staff-note">“For the wit, the longing, and the joy of falling in love slowly.”</p></article>
+            <article id="poetry" class="book-card"><div class="book-cover sage"><img src="https://covers.openlibrary.org/b/isbn/9780399563249-L.jpg" alt="Devotions: The Selected Poems of Mary Oliver book cover" width="240" height="360" loading="lazy" /></div><p class="book-genre">Poetry · Small wonders</p><h3>Devotions</h3><p class="author">Mary Oliver</p><p class="price">$20.00 <span>USD</span></p><p class="staff-note">“A gentle reminder to pay attention to the beautiful, ordinary world.”</p></article>
+          </div>
+        </section>
+      </div>
+      <aside class="closing wrap" aria-label="A reading reminder"><span aria-hidden="true">✧</span><p>Your next favorite place<br />might be <em>between the pages.</em></p><a class="text-link" href="#categories">Follow your curiosity <span aria-hidden="true">↑</span></a></aside>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-top wrap"><div><p class="footer-title">Book discovery <span aria-hidden="true">✧</span></p><p>A quiet corner for your next great read.</p></div><div><h2>Explore</h2><a href="#collections">Curated collections</a><a href="#bestsellers">Bestsellers</a><a href="#staff-picks">Staff Picks</a></div><div><h2>Say hello</h2><a href="mailto:hello@example.com">hello@example.com</a><p>Illustrative contact — not a live shop.</p></div><div><h2>Find inspiration</h2><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram ↗</a><a href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer">Pinterest ↗</a><p>Links to platform homepages.</p></div></div>
+      <div class="footer-bottom wrap"><p>A static editorial showcase. Prices in USD are illustrative; no purchases available.</p><a href="#main">Back to the beginning ↑</a></div>
+    </footer>
+  </body>
+</html>
