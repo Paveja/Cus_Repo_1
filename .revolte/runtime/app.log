@@ -1,0 +1,11 @@
+
+> simple-calculator@1.0.0 dev
+> next dev --hostname 0.0.0.0 --port 4173
+
+▲ Next.js 16.4.6 (Turbopack)
+- Local:         http://localhost:4173
+- Network:       http://0.0.0.0:4173
+✓ Ready in 267ms
+✓ Running next.config took 12ms
+
+ GET / 200 in 240ms (next.js: 133ms, application-code: 107ms)
