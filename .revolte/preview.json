@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "start": "npm run dev -- --port 4173",
+  "port": 4173,
+  "type": "nextjs",
+  "install": [
+    {
+      "name": "Node dependencies",
+      "check": "test -d node_modules && test -f node_modules/.package-lock.json",
+      "run": "npm ci"
+    }
+  ],
+  "services": []
+}
