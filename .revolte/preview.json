@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "type": "node",
+  "start": "npm run dev -- --port 4173",
+  "port": 4173,
+  "install": [
+    {
+      "name": "Install Node dependencies",
+      "check": "test -x node_modules/.bin/next",
+      "run": "npm ci"
+    }
+  ],
+  "services": []
+}
