@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "start": "export PATH=\"$PWD/.revolte/runtime/node/bin:$PATH\"; npm run dev",
+  "port": 4173,
+  "install": [
+    {
+      "name": "Node.js 22 runtime",
+      "check": "export PATH=\"$PWD/.revolte/runtime/node/bin:$PATH\"; node -e \"if(Number(process.versions.node.split(String.fromCharCode(46))[0])<22)process.exit(1)\"",
+      "run": "mkdir -p .revolte/runtime/node && curl -fsSL https://nodejs.org/dist/v22.23.2/node-v22.23.2-linux-x64.tar.xz | tar -xJ --strip-components=1 -C .revolte/runtime/node"
+    },
+    {
+      "name": "Application dependencies",
+      "check": "export PATH=\"$PWD/.revolte/runtime/node/bin:$PATH\"; npm ls --depth=0 >/dev/null 2>&1",
+      "run": "export PATH=\"$PWD/.revolte/runtime/node/bin:$PATH\"; npm ci"
+    }
+  ],
+  "services": []
+}

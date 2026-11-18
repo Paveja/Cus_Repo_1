@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+:root {
+  --background: #fafaf9;
+  --foreground: #0c0a09;
+  --card: #ffffff;
+  --card-foreground: #0c0a09;
+  --primary: #1c1917;
+  --primary-foreground: #ffffff;
+  --secondary: #44403c;
+  --secondary-foreground: #ffffff;
+  --accent: #a16207;
+  --accent-foreground: #ffffff;
+  --muted: #e8ecf0;
+  --muted-foreground: #475569;
+  --border: #d6d3d1;
+  --ring: #a16207;
+  --destructive: #b91c1c;
+  --destructive-foreground: #ffffff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #141210;
+    --foreground: #fafaf9;
+    --card: #211e1b;
+    --card-foreground: #fafaf9;
+    --primary: #fafaf9;
+    --primary-foreground: #1c1917;
+    --secondary: #d6d3d1;
+    --secondary-foreground: #1c1917;
+    --accent: #e9b75f;
+    --accent-foreground: #1c1917;
+    --muted: #292623;
+    --muted-foreground: #bcb8b2;
+    --border: #49433d;
+    --ring: #e9b75f;
+    --destructive: #fca5a5;
+    --destructive-foreground: #1c1917;
+  }
+}
+
+@theme inline {
+  --font-heading: var(--font-display);
+  --font-sans: var(--font-body);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-ring: var(--ring);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --radius-control: 4px;
+  --radius-container: 8px;
+  --text-5xl: 3rem;
+  --text-5xl--line-height: 3.25rem;
+  --animate-enter: enter 240ms ease-out both;
+  @keyframes enter {
+    from {
+      opacity: 0;
+      transform: translateY(8px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}

@@ -1,0 +1,24 @@
+# Dependencies and build output
+node_modules/
+.next/
+out/
+coverage/
+*.tsbuildinfo
+next-env.d.ts
+
+# Local configuration
+.env*
+!.env.example
+*.log
+.DS_Store
+
+# Crash artifacts
+core
+core.*
+*.heapsnapshot
+report.*.json
+isolate-*.log
+
+# Managed artifacts and local runtime
+.revolte/artifacts/
+.revolte/runtime/
